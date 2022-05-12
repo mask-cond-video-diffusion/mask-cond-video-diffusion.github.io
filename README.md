@@ -7,17 +7,18 @@
 ### <div align="center"> Summary </div>
 
 * General purpose model for video generation, forward/backward prediction, and interpolation
-* uses a [diffusion loss function](https://yang-song.github.io/blog/2021/score/)
+* uses a [diffusion loss function](https://yang-song.github.io/blog/2021/score/) to be able to generate novel current frames
 * injects Gaussian noise into the current frames and denoise them conditional on past and future frames
 * randomly mask past or/and future frames during training which allows the model to handle the four cases:
   * both past and present are known: interpolation
   * the past is unknown: past prediction
   * the future is unknown: future prediction
   * the past and future are unknown: unconditional generation
-* high-quality and diverse video samples
-* uses a simple 2D convolutional network; 3D convolutions or recurrent layers are not needed.
+* uses a [2D convolutional U-Net](https://arxiv.org/abs/2006.11239) instead of a complex 3D or recurrent architecture
+* condition on past and future frames through concatenation or space-time adaptive normalization
+* produce high-quality and diverse video samples
 * runs on 1-4 GPUs
-* scales very well with the number of channels and could be scaled much further than in the paper
+* scales well with the number of channels and could be scaled much further than in the paper
 
 ### <div align="center"> Abstract </div>
 
