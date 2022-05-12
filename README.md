@@ -7,7 +7,7 @@
 ### <div align="center"> Summary </div>
 
 * General purpose model for video generation, forward/backward prediction, and interpolation
-* uses a diffusion loss function
+* uses a [diffusion loss function](https://yang-song.github.io/blog/2021/score/)
 * injects Gaussian noise into the current frames and denoise them conditional on past and future frames
 * randomly mask past or/and future frames during training which allows the model to handle the four cases:
   * both past and present are known: interpolation
