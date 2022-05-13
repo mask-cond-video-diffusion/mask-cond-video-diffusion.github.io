@@ -6,7 +6,7 @@
 
 &nbsp;
 
-<img src="./MaskCondVideoDiffFigure.png" alt="Overview">
+<h3 align="center"> <img src="./MaskCondVideoDiffFigure.png" alt="Overview"> </h3>
 
 <h3 align="center"> Summary </h3>
 
@@ -29,19 +29,19 @@ Current state-of-the-art (SOTA) methods for video prediction/generation generall
 {: style="text-align: justify"}
 
 
-## Video Prediction
+## <h3 align="center"> Video Prediction </h3>
 
 *left (with frame number)* : real image ; *right* : predicted image ; *'c'* : conditional frame
 
-### Cityscapes (128x128)
+### <h3 align="center"> Cityscapes (128x128) </h3>
 cond=2, train=5, autoregressive pred=30
 ![city32_big192_5c2_unetm_long](./city32_big192_5c2_unetm_long_75_half.gif "Cityscapes c2t5")
 
-### KTH (64x64)
+### <h3 align="center"> KTH (64x64) </h3>
 cond=10, train=5, autoregressive pred=20
 ![KTH_big_c10t5_SPADE](./KTH_big_c10t5_SPADE.gif "KTH c10t5")
 
-### Stochastic Moving MNIST (64x64)
+### <h3 align="center"> Stochastic Moving MNIST (64x64) </h3>
 cond=5, train=5, autoregressive pred=20
 ![SMMNIST_big_c5t5_SPADE](./SMMNIST_big_c5t5_SPADE_videos_300000.gif "SMMNIST c5t5")
 
