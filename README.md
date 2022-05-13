@@ -6,7 +6,7 @@
 
 &nbsp;
 
-<h3 align="center"> <img src="./MaskCondVideoDiffFigure.png" alt="Overview"> </h3>
+<h3 align="center"> <img src="./MaskCondVideoDiffFigure.svg" alt="Overview"> </h3>
 
 <h3 align="center"> Summary </h3>
 
