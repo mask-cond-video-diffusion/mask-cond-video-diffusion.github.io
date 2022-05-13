@@ -32,7 +32,7 @@ Current state-of-the-art (SOTA) methods for video prediction/generation generall
 
 <h2 align="center"> Video Prediction </h2>
 
-We first use real `past` frames to generate current frames, then we autoregressively generate the current frames after that using the last generated frames as new `past` frames:
+First, we use real `past` frames to predict current frames. Then, we autoregressively predict the frames after that using the last predicted frames as new `past` frames (free-running):
 
 <h3 align="center"> <img src="./autoregressive.svg" alt="autoregressive" width="300"> </h3>
 
@@ -41,7 +41,7 @@ We first use real `past` frames to generate current frames, then we autoregressi
 
 &nbsp;
 
-<h3 align="center"> Cityscapes (128x128) </h3>
+### Cityscapes (128x128)
 
 `past`=2, `current`=5, autoregressive `pred`=28
 
@@ -49,17 +49,17 @@ We first use real `past` frames to generate current frames, then we autoregressi
 
 &nbsp;
 
-<h3 align="center"> KTH (64x64) </h3>
+### KTH (64x64)
 
-past=10, current=5, autoregressive pred=20
+`past`=10, `current`=5, autoregressive `pred`=20
 
 ![KTH_big_c10t5_SPADE](./KTH_big_c10t5_SPADE.gif "KTH c10t5")
 
 &nbsp;
 
-<h3 align="center"> Stochastic Moving MNIST (64x64) </h3>
+### Stochastic Moving MNIST (64x64)
 
-past=5, current=5, autoregressive pred=20
+`past`=5, `current`=5, autoregressive `pred`=20
 
 ![SMMNIST_big_c5t5_SPADE](./SMMNIST_big_c5t5_SPADE_videos_300000.gif "SMMNIST c5t5")
 
