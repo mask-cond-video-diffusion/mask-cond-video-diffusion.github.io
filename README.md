@@ -20,7 +20,7 @@
 * Uses a [2D convolutional U-Net](https://arxiv.org/abs/2006.11239) instead of a complex 3D or recurrent or transformer architecture
 * Conditions on past and future frames through concatenation or space-time adaptive normalization
 * Produces high-quality and diverse video samples
-* Trains on only 1-4 GPUs
+* Trains with only 1-4 GPUs
 * Scales well with the number of channels, and could be scaled much further than in the paper
 
 <h3 align="center"> Abstract </h3>
