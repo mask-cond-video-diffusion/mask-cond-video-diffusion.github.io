@@ -6,7 +6,7 @@
 
 &nbsp;
 
-![Overview](./MaskCondVideoDiff.png "Overview")
+<img src="./MaskCondVideoDiff2.png" alt="Overview">
 
 <h3 align="center"> Summary </h3>
 
