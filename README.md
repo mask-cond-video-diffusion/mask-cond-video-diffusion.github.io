@@ -1,4 +1,4 @@
-<h1 align="center"> Masked Conditional Video Diffusion for <br\> Generation, Prediction, and Interpolation </h1>
+<h1 align="center"> Masked Conditional Video Diffusion for <br/> Generation, Prediction, and Interpolation </h1>
 
 <h3 align="center"> <a href="https://voletiv.github.io" target="_blank">Vikram Voleti</a>*, <a href="https://ajolicoeur.wordpress.com/about/" target="_blank">Alexia Jolicoeur-Martineau</a>*, <a href="https://sites.google.com/view/christopher-pal" target="_blank">Chris Pal</a></h3>
 
