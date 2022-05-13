@@ -31,13 +31,17 @@ Current state-of-the-art (SOTA) methods for video prediction/generation generall
 
 <h2 align="center"> Video Prediction </h2>
 
+We first use real `past` frames to generate current frames, then we autoregressively generate the current frames after that using the last generated frames as new `past` frames:
+
+<h3 align="center"> <img src="./autoregressive.svg" alt="autoregressive" width="300"> </h3>
+
 * *left column (with frame number)* : real image 
 * *right column* : predicted image
 
 
 <h3 align="center"> Cityscapes (128x128) </h3>
 
-past=2, current=5, autoregressive pred=28
+`past`=2, `current`=5, autoregressive `pred`=28
 
 ![city32_big192_5c2_unetm_long_75_half](./city32_big192_5c2_unetm_long_75_half.gif "Cityscapes c2t5")
 
