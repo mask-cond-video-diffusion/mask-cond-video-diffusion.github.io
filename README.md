@@ -37,21 +37,21 @@ Current state-of-the-art (SOTA) methods for video prediction/generation generall
 
 <h3 align="center"> Cityscapes (128x128) </h3>
 
-previous=2, current=5, autoregressive pred=28
+past=2, current=5, autoregressive pred=28
 
 ![city32_big192_5c2_unetm_long_75_half](./city32_big192_5c2_unetm_long_75_half.gif "Cityscapes c2t5")
 
 
 <h3 align="center"> KTH (64x64) </h3>
 
-previous=10, current=5, autoregressive pred=20
+past=10, current=5, autoregressive pred=20
 
 ![KTH_big_c10t5_SPADE](./KTH_big_c10t5_SPADE.gif "KTH c10t5")
 
 
 <h3 align="center"> Stochastic Moving MNIST (64x64) </h3>
 
-previous=5, current=5, autoregressive pred=20
+past=5, current=5, autoregressive pred=20
 
 ![SMMNIST_big_c5t5_SPADE](./SMMNIST_big_c5t5_SPADE_videos_300000.gif "SMMNIST c5t5")
 
