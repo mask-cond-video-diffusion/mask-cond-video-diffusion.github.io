@@ -28,6 +28,7 @@
 Current state-of-the-art (SOTA) methods for video prediction/generation generally require complex 3D Transformers or recurrent auto-encoders. In spite of these complex architectures, results often remain low quality due to significant underfitting. On the other hand, the very few methods that don't underfit often require complex data augmentations to prevent severe overfitting which limits generalization beyond the training data. Meanwhile, we achieve SOTA results with a simple architecture with no recurrent layer, expensive 3D convolution, space-time attention, or complex data augmentation (except for the Gaussian noise added by the diffusion loss). They key to achieving such high quality videos is the use of a diffusion loss function and conditioning on past frames through concatenation or space-time adaptive normalization.
 {: style="text-align: justify"}
 
+&nbsp;
 
 <h2 align="center"> Video Prediction </h2>
 
@@ -38,6 +39,7 @@ We first use real `past` frames to generate current frames, then we autoregressi
 * *left column (with frame number)* : real image 
 * *right column* : predicted image
 
+&nbsp;
 
 <h3 align="center"> Cityscapes (128x128) </h3>
 
@@ -45,6 +47,7 @@ We first use real `past` frames to generate current frames, then we autoregressi
 
 ![city32_big192_5c2_unetm_long_75_half](./city32_big192_5c2_unetm_long_75_half.gif "Cityscapes c2t5")
 
+&nbsp;
 
 <h3 align="center"> KTH (64x64) </h3>
 
@@ -52,6 +55,7 @@ past=10, current=5, autoregressive pred=20
 
 ![KTH_big_c10t5_SPADE](./KTH_big_c10t5_SPADE.gif "KTH c10t5")
 
+&nbsp;
 
 <h3 align="center"> Stochastic Moving MNIST (64x64) </h3>
 
