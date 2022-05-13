@@ -31,7 +31,8 @@ Current state-of-the-art (SOTA) methods for video prediction/generation generall
 
 <h3 align="center"> Video Prediction </h3>
 
-*left (with frame number)* : real image ; *right* : predicted image ; *'p'* : previous frame
+* left column (with frame number) : real image 
+* right column : predicted image
 
 <h3 align="center"> Cityscapes (128x128) </h3>
 previous=2, current=5, autoregressive pred=10
