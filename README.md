@@ -29,7 +29,7 @@ Current state-of-the-art (SOTA) methods for video prediction/generation generall
 {: style="text-align: justify"}
 
 
-<h2 align="center"> Video Prediction </h3>
+<h2 align="center"> Video Prediction </h2>
 
 * *left column (with frame number)* : real image 
 * *right column* : predicted image
