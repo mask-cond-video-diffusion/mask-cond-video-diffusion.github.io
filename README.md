@@ -37,7 +37,7 @@ Current state-of-the-art (SOTA) methods for video prediction/generation generall
 
 <h3 align="center"> Cityscapes (128x128) </h3>
 
-previous=2, current=5, autoregressive pred=10
+previous=2, current=5, autoregressive pred=28
 
 ![city32_big192_5c2_unetm_long_75_half](./city32_big192_5c2_unetm_long_75_half.gif "Cityscapes c2t5")
 
