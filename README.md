@@ -31,11 +31,7 @@ Current state-of-the-art (SOTA) methods for video prediction/generation generall
 
 ## Video Prediction
 
-left (with frame number) : real image
-
-right : predicted image
-
-'c' : conditional frame
+*left (with frame number)* : real image ; *right* : predicted image ; *'c'* : conditional frame
 
 ### Cityscapes (128x128)
 cond=2, train=5, autoregressive pred=30
