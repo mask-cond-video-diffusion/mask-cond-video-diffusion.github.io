@@ -32,9 +32,9 @@ Current state-of-the-art (SOTA) methods for video prediction/generation generall
 
 <h2 align="center"> Video Prediction </h2>
 
-First, we use real `past` frames to predict current frames. Then, we autoregressively predict the frames after that using the last predicted frames as new `past` frames (free-running):
+First, we use real `past` frames to predict `current` frames. Then, we autoregressively predict the next `current` frames using the last predicted frames as the new `past` frames (free-running):
 
-<h3 align="center"> <img src="./autoregressive.svg" alt="autoregressive" width="300"> </h3>
+<h3 align="center"> <img src="./autoregressive2.svg" alt="autoregressive" width="300"> </h3>
 
 * *left column (with frame number)* : real image 
 * *right column* : predicted image
