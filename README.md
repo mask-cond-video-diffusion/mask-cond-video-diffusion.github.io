@@ -15,8 +15,9 @@
 * Injects Gaussian noise into the current frames and denoises them conditional on past and/or future frames
 * Randomly *masks* past and/or future frames during training which allows the model to handle the four cases:
   * Interpolation : both past and present are known
-  * Prediction : the past/future is known
-  * Unconditional Generation : the past and future are unknown
+  * Future Prediction : only the past is known
+  * Past Reconstruction : only the future is known
+  * Unconditional Generation : both past and future are unknown
 * Uses a [2D convolutional U-Net](https://arxiv.org/abs/2006.11239) instead of a complex 3D or recurrent or transformer architecture
 * Conditions on past and future frames through concatenation or space-time adaptive normalization
 * Produces high-quality and diverse video samples
