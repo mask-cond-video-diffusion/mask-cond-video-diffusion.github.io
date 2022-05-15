@@ -31,7 +31,7 @@ Current state-of-the-art (SOTA) methods for video prediction/generation generall
 
 &nbsp;
 
-<h2 align="center"> Video Prediction </h2>
+<h1 align="center"> Video Prediction </h1>
 
 First, we use real `past` frames to predict `current` frames. Then, we autoregressively predict the next `current` frames using the last predicted frames as the new `past` frames (free-running):
 
@@ -73,7 +73,7 @@ Our approach generates high quality frames many steps into the future: Given the
 
 &nbsp;
 
-<h2 align="center"> Video Interpolation </h2>
+<h1 align="center"> Video Interpolation </h1>
 
 * *left column (with frame number)* : real image 
 * *right column* : predicted image
