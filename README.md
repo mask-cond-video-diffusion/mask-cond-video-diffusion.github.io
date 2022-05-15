@@ -105,8 +105,6 @@ Our approach generates high quality frames many steps into the future: Given the
 
 ### BAIR (64x64)
 
-`past`=2, `current`=5, autoregressive `pred`=28
-
 ![BAIR_big_c2t5_SPADE](./bair64_gen_big192_5c2_pmask50_unetm_spade_videos_400000.gif "BAIR gen c2t5")
 
 &nbsp;
