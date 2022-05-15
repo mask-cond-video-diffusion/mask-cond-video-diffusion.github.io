@@ -97,17 +97,19 @@ Our approach generates high quality frames many steps into the future: Given the
 
 ### KTH (64x64)
 
-![KTH_gen_big_c10t5f5_SPADE](./KTH_gen_big_c10t5f5_SPADE_videos_100000.gif "KTH gen c10t5f5")
+<h3 align="center"> <img src="./KTH_gen_big_c10t5f5_SPADE_videos_100000.gif" alt="KTH gen c10t5f5"> </h3>
 
 &nbsp;
 
 ### Stochastic Moving MNIST (64x64)
 
-<h3 align="center"> <img src="./SMMNIST_gen_big_c5t5f5_SPADE_videos_150000.gif" alt="SMMNIST_gen_big_c5t5f5_SPADE_videos_150000"> </h3>
+<h3 align="center"> <img src="./SMMNIST_gen_big_c5t5f5_SPADE_videos_150000.gif" alt="SMMNIST gen c5t5f5"> </h3>
+
+&nbsp;
 
 <h2 align="center"> Architecture </h2>
 
-<h3 align="center"> <img src="./SPATIN.svg" alt="SPATIN" width="50%"> </h3>
+<h3 align="center"> <img src="./SPATIN.svg" alt="SPATIN" width="75%"> </h3>
 
 
 
