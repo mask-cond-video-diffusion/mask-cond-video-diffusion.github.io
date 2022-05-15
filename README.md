@@ -75,6 +75,9 @@ Our approach generates high quality frames many steps into the future: Given the
 
 <h2 align="center"> Video Interpolation </h2>
 
+* *left column (with frame number)* : real image 
+* *right column* : predicted image
+
 &nbsp;
 
 ### KTH (64x64)
