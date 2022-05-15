@@ -103,8 +103,6 @@ Our approach generates high quality frames many steps into the future: Given the
 
 ### Stochastic Moving MNIST (64x64)
 
-`past`=5, **`interp`=5**, `future`=5
-
 ![SMMNIST_gen_big_c5t5_SPADE](./SMMNIST_gen_big_c5t5f5_SPADE_videos_150000.gif "SMMNIST interp c5t5f5")
 
 
