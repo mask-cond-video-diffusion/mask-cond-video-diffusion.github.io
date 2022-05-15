@@ -6,7 +6,7 @@
 
 &nbsp;
 
-<h3 align="center"> <img src="./MaskCondVideoDiffFigure.svg" alt="Overview"  width="65%"> </h3>
+<h3 align="center"> <img src="./MaskCondVideoDiffFigure.svg" alt="Overview"  width="75%"> </h3>
 
 <h3 align="center"> Summary </h3>
 
@@ -35,7 +35,7 @@ Current state-of-the-art (SOTA) methods for video prediction/generation generall
 
 First, we use real `past` frames to predict `current` frames. Then, we autoregressively predict the next `current` frames using the last predicted frames as the new `past` frames (free-running):
 
-<h3 align="center"> <img src="./autoregressive2.svg" alt="autoregressive" width="40%"> </h3>
+<h3 align="center"> <img src="./autoregressive2.svg" alt="autoregressive" width="50%"> </h3>
 
 * *left column (with frame number)* : real image 
 * *right column* : predicted image
@@ -103,8 +103,11 @@ Our approach generates high quality frames many steps into the future: Given the
 
 ### Stochastic Moving MNIST (64x64)
 
-![SMMNIST_gen_big_c5t5_SPADE](./SMMNIST_gen_big_c5t5f5_SPADE_videos_150000.gif "SMMNIST interp c5t5f5")
+<h3 align="center"> <img src="./SMMNIST_gen_big_c5t5f5_SPADE_videos_150000.gif" alt="SMMNIST_gen_big_c5t5f5_SPADE_videos_150000"> </h3>
 
+<h2 align="center"> Architecture </h2>
+
+<h3 align="center"> <img src="./SPATIN.svg" alt="SPATIN" width="50%"> </h3>
 
 
 
