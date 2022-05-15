@@ -6,7 +6,7 @@
 
 &nbsp;
 
-<h3 align="center"> <img src="./MaskCondVideoDiffFigure.svg" alt="Overview"  width="75%"> </h3>
+<h3 align="center"> <img src="./MaskCondVideoDiffFigure.svg" alt="Overview"  width="70%"> </h3>
 
 <h3 align="center"> Summary </h3>
 
@@ -54,6 +54,14 @@ Our approach generates high quality frames many steps into the future: Given the
 
 &nbsp;
 
+### BAIR (64x64)
+
+`past`=2, `current`=5, autoregressive `pred`=28
+
+![BAIR_big_c2t5_SPADE](./bair64_big192_5c2_unetm_spade_videos_390000.gif "BAIR pred c2t5")
+
+&nbsp;
+
 ### KTH (64x64)
 
 `past`=10, `current`=5, autoregressive `pred`=20
@@ -94,6 +102,14 @@ Our approach generates high quality frames many steps into the future: Given the
 
 
 <h1 align="center"> Video Generation </h1>
+
+### BAIR (64x64)
+
+`past`=2, `current`=5, autoregressive `pred`=28
+
+![BAIR_big_c2t5_SPADE](./bair64_gen_big192_5c2_pmask50_unetm_spade_videos_400000.gif "BAIR gen c2t5")
+
+&nbsp;
 
 ### KTH (64x64)
 
