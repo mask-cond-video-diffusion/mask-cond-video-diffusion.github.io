@@ -52,7 +52,7 @@ Our approach generates high quality frames many steps into the future: Given the
 
 &nbsp;
 
-![city32_big192_5c2_unetm_long_75_half](./city32_big192_5c2_unetm_long_75_half.gif "Cityscapes c2t5")
+![city32_big192_5c2_unetm_long_75_half](./city32_big192_5c2_unetm_long_75_half.gif "Cityscapes pred c2t5")
 
 &nbsp;
 
@@ -60,7 +60,7 @@ Our approach generates high quality frames many steps into the future: Given the
 
 `past`=10, `current`=5, autoregressive `pred`=20
 
-![KTH_big_c10t5_SPADE](./KTH_big_c10t5_SPADE.gif "KTH c10t5")
+![KTH_big_c10t5_SPADE](./KTH_big_c10t5_SPADE.gif "KTH pred c10t5")
 
 &nbsp;
 
@@ -68,7 +68,23 @@ Our approach generates high quality frames many steps into the future: Given the
 
 `past`=5, `current`=5, autoregressive `pred`=20
 
-![SMMNIST_big_c5t5_SPADE](./SMMNIST_big_c5t5_SPADE_videos_300000.gif "SMMNIST c5t5")
+![SMMNIST_big_c5t5_SPADE](./SMMNIST_big_c5t5_SPADE_videos_300000.gif "SMMNIST pred c5t5")
+
+
+<h2 align="center"> Video Interpolation </h2>
+
+### KTH (64x64)
+
+`past`=10, **`interp`=10**, `future`=5
+
+![KTH_interp_big_c10t10f5_SPADE](./KTH_interp_big_c10t10f5_SPADE_videos_75000.gif "KTH interp c10t10f5")
+
+
+### Stochastic Moving MNIST (64x64)
+
+`past`=5, **`interp`=5**, `future`=5
+
+![SMMNIST_big_c5t5_SPADE](./SMMNIST_interp_big_c5t5f5_SPADE_videos_150000.gif "SMMNIST interp c5t5f5")
 
 
 
