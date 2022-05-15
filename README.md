@@ -68,8 +68,8 @@ Our approach generates high quality frames many steps into the future: Given the
 
 ![SMMNIST_big_c5t5_SPADE](./SMMNIST_big_c5t5_SPADE_videos_300000.gif "SMMNIST pred c5t5")
 
-
 &nbsp;
+
 
 <h1 align="center"> Video Interpolation </h1>
 
@@ -88,7 +88,24 @@ Our approach generates high quality frames many steps into the future: Given the
 
 `past`=5, **`interp`=5**, `future`=5
 
-![SMMNIST_big_c5t5_SPADE](./SMMNIST_interp_big_c5t5f5_SPADE_videos_150000.gif "SMMNIST interp c5t5f5")
+![SMMNIST_interp_big_c5t5_SPADE](./SMMNIST_interp_big_c5t5f5_SPADE_videos_150000.gif "SMMNIST interp c5t5f5")
+
+&nbsp;
+
+
+<h1 align="center"> Video Generation </h1>
+
+### KTH (64x64)
+
+![KTH_gen_big_c10t5f5_SPADE](./KTH_gen_big_c10t5f5_SPADE_videos_100000.gif "KTH gen c10t5f5")
+
+&nbsp;
+
+### Stochastic Moving MNIST (64x64)
+
+`past`=5, **`interp`=5**, `future`=5
+
+![SMMNIST_gen_big_c5t5_SPADE](./SMMNIST_gen_big_c5t5f5_SPADE_videos_150000.gif "SMMNIST interp c5t5f5")
 
 
 
