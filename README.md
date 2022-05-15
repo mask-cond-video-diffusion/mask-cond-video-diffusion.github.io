@@ -6,7 +6,7 @@
 
 &nbsp;
 
-<h3 align="center"> <img src="./MaskCondVideoDiffFigure.svg" alt="Overview"  width="60%"> </h3>
+<h3 align="center"> <img src="./MaskCondVideoDiffFigure.svg" alt="Overview"  width="70%"> </h3>
 
 <h3 align="center"> Summary </h3>
 
@@ -35,7 +35,7 @@ Current state-of-the-art (SOTA) methods for video prediction/generation generall
 
 First, we use real `past` frames to predict `current` frames. Then, we autoregressively predict the next `current` frames using the last predicted frames as the new `past` frames (free-running):
 
-<h3 align="center"> <img src="./autoregressive2.svg" alt="autoregressive" width="300"> </h3>
+<h3 align="center"> <img src="./autoregressive2.svg" alt="autoregressive" width="40%"> </h3>
 
 * *left column (with frame number)* : real image 
 * *right column* : predicted image
@@ -47,6 +47,7 @@ First, we use real `past` frames to predict `current` frames. Then, we autoregre
 `past`=2, `current`=5, autoregressive `pred`=28
 
 <h3 align="center"> <img src="./Cityscapes_arrow.png" alt="Cityscapes_arrow"> </h3>
+
 Our approach generates high quality frames many steps into the future: Given the two conditioning frames from the [Cityscapes](https://www.cityscapes-dataset.com/) validation set (top left), we show 7 predicted future frames in row 2 below, then skip to frames 20-28, autoregressively predicted in row 4. Ground truth frames are shown in rows 1 and 3. Notice the initial large arrow advancing and passing under the car. At frame 20 (the far left of the 3rd and 4th row), the initially small and barely visible second arrow in the background of the conditioning frames has advanced into the foreground.
 
 &nbsp;
