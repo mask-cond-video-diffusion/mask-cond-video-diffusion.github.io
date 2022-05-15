@@ -14,10 +14,10 @@
 * Uses a [score-based diffusion loss function](https://yang-song.github.io/blog/2021/score/) to generate novel frames
 * Injects Gaussian noise into the current frames and denoises them conditional on past and/or future frames
 * Randomly *masks* past and/or future frames during training which allows the model to handle the four cases:
-  * Interpolation : both past and present are known
+  * Unconditional Generation : both past and future are unknown
   * Future Prediction : only the past is known
   * Past Reconstruction : only the future is known
-  * Unconditional Generation : both past and future are unknown
+  * Interpolation : both past and present are known
 * Uses a [2D convolutional U-Net](https://arxiv.org/abs/2006.11239) instead of a complex 3D or recurrent or transformer architecture
 * Conditions on past and future frames through concatenation or space-time adaptive normalization
 * Produces high-quality and diverse video samples
@@ -71,7 +71,11 @@ Our approach generates high quality frames many steps into the future: Given the
 ![SMMNIST_big_c5t5_SPADE](./SMMNIST_big_c5t5_SPADE_videos_300000.gif "SMMNIST pred c5t5")
 
 
+&nbsp;
+
 <h2 align="center"> Video Interpolation </h2>
+
+&nbsp;
 
 ### KTH (64x64)
 
@@ -79,6 +83,7 @@ Our approach generates high quality frames many steps into the future: Given the
 
 ![KTH_interp_big_c10t10f5_SPADE](./KTH_interp_big_c10t10f5_SPADE_videos_75000.gif "KTH interp c10t10f5")
 
+&nbsp;
 
 ### Stochastic Moving MNIST (64x64)
 
