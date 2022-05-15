@@ -40,8 +40,6 @@ First, we use real `past` frames to predict `current` frames. Then, we autoregre
 * *left column (with frame number)* : real image 
 * *right column* : predicted image
 
-&nbsp;
-
 ### Cityscapes (128x128)
 
 `past`=2, `current`=5, autoregressive `pred`=28
@@ -77,8 +75,6 @@ Our approach generates high quality frames many steps into the future: Given the
 
 * *left column (with frame number)* : real image 
 * *right column* : predicted image
-
-&nbsp;
 
 ### KTH (64x64)
 
