@@ -123,7 +123,7 @@ Our approach generates high quality frames many steps into the future: Given the
 
 <h2 align="center"> Architecture </h2>
 
-<h3 align="center"> <img src="./SPATIN.svg" alt="SPATIN" width="75%"> </h3>
+<h3 align="center"> <img src="./SPATIN.svg" alt="SPATIN" width="85%"> </h3>
 
 
 
