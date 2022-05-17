@@ -92,6 +92,14 @@ Our approach generates high quality frames many steps into the future: Given the
 
 &nbsp;
 
+### BAIR (64x64)
+
+`past`=1, **`interp`=5**, `future`=2
+
+<h3 align="center"> <img src="./BAIR_interp_DDPM_PredPlusInterp_big_c1t5_SPADE_videos_100000.gif" alt="BAIR interp c1t5f2"> </h3>
+
+&nbsp;
+
 ### Stochastic Moving MNIST (64x64)
 
 `past`=5, **`interp`=5**, `future`=5
