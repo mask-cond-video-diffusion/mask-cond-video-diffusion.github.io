@@ -132,7 +132,7 @@ In SMMNIST, when two digits overlap during 5 frames, a model conditioning on 5 p
 
 &nbsp;
 
-<h2 align="center"> Architecture </h2>
+<h2 align="center"> SPATIN Architecture </h2>
 
 <h3 align="center"> <img src="./SPATIN.svg" alt="SPATIN" width="85%"> </h3>
 
