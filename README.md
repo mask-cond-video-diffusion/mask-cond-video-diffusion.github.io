@@ -125,7 +125,7 @@ Our approach generates high quality frames many steps into the future: Given the
 
 ### Stochastic Moving MNIST (64x64)
 
-<h3 align="center"> <img src="./SMMNIST_gen_big_c5t5f5_SPADE_videos_350000.gif" alt="SMMNIST gen c5t5f5"> </h3>
+<h3 align="center"> <img src="./SMMNIST_gen_big_c5t5f5_concat_videos_650000.gif" alt="SMMNIST gen c5t5f5"> </h3>
 
 &nbsp;
 
