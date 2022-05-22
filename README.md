@@ -40,20 +40,6 @@ First, we use real `past` frames to predict `current` frames. Then, we autoregre
 * *left column (with frame number)* : real image 
 * *right column* : predicted image
 
-### Cityscapes (128x128)
-
-`past`=2, `current`=5, autoregressive `pred`=28
-
-![city32_big192_5c2_unetm_long_75_half](./city32_big192_5c2_unetm_long_75_half.gif "Cityscapes pred c2t5")
-
-&nbsp;
-
-<h3 align="center"> <img src="./Cityscapes_arrow.svg" alt="Cityscapes_arrow"> </h3>
-
-Our approach generates high quality frames many steps into the future: Given the two conditioning frames from the [Cityscapes](https://www.cityscapes-dataset.com/) validation set (top left), we show 7 predicted future frames in row 2 below, then skip to frames 20-28, autoregressively predicted in row 4. Ground truth frames are shown in rows 1 and 3. Notice the initial large arrow advancing and passing under the car. At frame 20 (the far left of the 3rd and 4th row), the initially small and barely visible second arrow in the background of the conditioning frames has advanced into the foreground.
-
-&nbsp;
-
 ### KTH (64x64)
 
 `past`=10, `current`=5, autoregressive `pred`=20
@@ -69,6 +55,21 @@ Our approach generates high quality frames many steps into the future: Given the
 ![BAIR_big_c2t5_SPADE](./bair64_big192_5c2_unetm_spade_videos_390000.gif "BAIR pred c2t5")
 
 &nbsp;
+
+### Cityscapes (128x128)
+
+`past`=2, `current`=5, autoregressive `pred`=28
+
+![city32_big192_5c2_unetm_long_75_half](./city32_big192_5c2_unetm_long_75_half.gif "Cityscapes pred c2t5")
+Note that some Cityscapes videos contain brightness changes, which may explain the brightness change in our fake samples, but it is definitively overrepresented in the fake data. More parameters would needed to fix this problem (beyond what we can achieve with our 4 GPUs).
+&nbsp;
+
+<h3 align="center"> <img src="./Cityscapes_arrow.svg" alt="Cityscapes_arrow"> </h3>
+
+Our approach generates high quality frames many steps into the future: Given the two conditioning frames from the [Cityscapes](https://www.cityscapes-dataset.com/) validation set (top left), we show 7 predicted future frames in row 2 below, then skip to frames 20-28, autoregressively predicted in row 4. Ground truth frames are shown in rows 1 and 3. Notice the initial large arrow advancing and passing under the car. At frame 20 (the far left of the 3rd and 4th row), the initially small and barely visible second arrow in the background of the conditioning frames has advanced into the foreground.
+
+&nbsp;
+
 
 ### Stochastic Moving MNIST (64x64)
 
@@ -126,7 +127,7 @@ Our approach generates high quality frames many steps into the future: Given the
 ### Stochastic Moving MNIST (64x64)
 
 <h3 align="center"> <img src="./SMMNIST_gen_big_c5t5f5_concat_videos_650000.gif" alt="SMMNIST gen c5t5f5"> </h3>
-
+In SMMNIST, when two digits overlap during 5 frames, a model conditioning on 5 previous frames will have to guess what those numbers were before overlapping, so they may change randomly. This would be fixed by using a large number of conditioned previous frames. We used 5 to match previous prediction baselines, which start from 5 frames.
 &nbsp;
 
 <h2 align="center"> Architecture </h2>
