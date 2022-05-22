@@ -77,6 +77,8 @@ Our approach generates high quality frames many steps into the future: Given the
 
 ![SMMNIST_big_c5t5_SPADE](./SMMNIST_big_c5t5_SPADE_videos_300000.gif "SMMNIST pred c5t5")
 
+In SMMNIST, when two digits overlap during 5 frames, a model conditioning on 5 previous frames will have to guess what those numbers were before overlapping, so they may change randomly. This would be fixed by using a large number of conditioned previous frames. We used 5 to match previous prediction baselines, which start from 5 frames.
+
 &nbsp;
 
 
@@ -127,7 +129,7 @@ Our approach generates high quality frames many steps into the future: Given the
 ### Stochastic Moving MNIST (64x64)
 
 <h3 align="center"> <img src="./SMMNIST_gen_big_c5t5f5_concat_videos_650000.gif" alt="SMMNIST gen c5t5f5"> </h3>
-In SMMNIST, when two digits overlap during 5 frames, a model conditioning on 5 previous frames will have to guess what those numbers were before overlapping, so they may change randomly. This would be fixed by using a large number of conditioned previous frames. We used 5 to match previous prediction baselines, which start from 5 frames.
+
 &nbsp;
 
 <h2 align="center"> Architecture </h2>
