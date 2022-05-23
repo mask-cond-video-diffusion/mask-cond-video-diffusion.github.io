@@ -1,4 +1,4 @@
-<h1 align="center"> Masked Conditional Video Diffusion for <br/> Generation, Prediction, and Interpolation </h1>
+<h1 align="center"> Masked Conditional Video Diffusion for <br/> Prediction, Generation, and Interpolation </h1>
 
 <h3 align="center"> <a href="https://voletiv.github.io" target="_blank">Vikram Voleti</a>*, <a href="https://ajolicoeur.wordpress.com/about/" target="_blank">Alexia Jolicoeur-Martineau</a>*, <a href="https://sites.google.com/view/christopher-pal" target="_blank">Christopher Pal</a></h3>
 
@@ -26,7 +26,7 @@
 
 <h3 align="center"> Abstract </h3>
 
-Current state-of-the-art (SOTA) methods for video prediction/generation generally require complex 3D Transformers or recurrent auto-encoders. In spite of these complex architectures, results often remain low quality due to significant underfitting. On the other hand, the very few methods that don't underfit often require complex data augmentations to prevent severe overfitting which limits generalization beyond the training data. Meanwhile, we achieve SOTA results with a simple architecture with no recurrent layer, expensive 3D convolution, space-time attention, or complex data augmentation (except for the Gaussian noise added by the diffusion loss). They key to achieving such high quality videos is the use of a diffusion loss function and conditioning on past frames through concatenation or space-time adaptive normalization.
+Video prediction is a challenging task. The quality of video frames from current state-of-the-art (SOTA) generative models tends to be poor and generalization beyond the training data is difficult. Furthermore, existing prediction frameworks are typically not capable of simultaneously handling other video-related tasks such as unconditional generation or interpolation. In this work, we devise a general-purpose framework called Masked Conditional Video Diffusion (MCVD) for all of these video synthesis tasks using a probabilistic conditional score-based denoising diffusion model, conditioned on past and/or future frames. We train the model in a manner where we randomly and independently mask all the past frames or all the future frames. This novel but straightforward setup allows us to train a single model that is capable of executing a broad range of video tasks, specifically: future/past prediction -- when only future/past frames are masked; unconditional generation -- when both past and future frames are masked; and interpolation -- when neither past nor future frames are masked. Our experiments show that this approach can generate high-quality frames for diverse types of videos. Our MCVD models are built from simple non-recurrent 2D-convolutional architectures, conditioning on blocks of frames and generating blocks of frames. We generate videos of arbitrary lengths autoregressively in a block-wise manner. Our approach yields SOTA results across standard video prediction and interpolation benchmarks, with computation times for training models measured in 1-12 days using $\le$ 4 GPUs.
 {: style="text-align: justify"}
 
 &nbsp;
@@ -70,7 +70,6 @@ Our approach generates high quality frames many steps into the future: Given the
 
 &nbsp;
 
-
 ### Stochastic Moving MNIST (64x64)
 
 `past`=5, `current`=5, autoregressive `pred`=20
@@ -78,6 +77,27 @@ Our approach generates high quality frames many steps into the future: Given the
 ![SMMNIST_big_c5t5_SPADE](./SMMNIST_big_c5t5_SPADE_videos_300000.gif "SMMNIST pred c5t5")
 
 In SMMNIST, when two digits overlap during 5 frames, a model conditioning on 5 previous frames will have to guess what those numbers were before overlapping, so they may change randomly. This would be fixed by using a large number of conditioned previous frames. We used 5 to match previous prediction baselines, which start from 5 frames.
+
+&nbsp;
+
+
+<h1 align="center"> Video Generation </h1>
+
+### KTH (64x64)
+
+<h3 align="center"> <img src="./KTH_gen_big_c10t5f5_SPADE_videos_100000.gif" alt="KTH gen c10t5f5"> </h3>
+
+&nbsp;
+
+### BAIR (64x64)
+
+<h3 align="center"> <img src="./bair64_gen_big192_5c2_pmask50_unetm_spade_videos_400000.gif" alt="BAIR gen c2t5"> </h3>
+
+&nbsp;
+
+### Stochastic Moving MNIST (64x64)
+
+<h3 align="center"> <img src="./SMMNIST_gen_big_c5t5f5_concat_videos_650000.gif" alt="SMMNIST gen c5t5f5"> </h3>
 
 &nbsp;
 
@@ -108,27 +128,6 @@ In SMMNIST, when two digits overlap during 5 frames, a model conditioning on 5 p
 `past`=5, **`interp`=5**, `future`=5
 
 ![SMMNIST_interp_big_c5t5_SPADE](./SMMNIST_interp_big_c5t5f5_SPADE_videos_150000.gif "SMMNIST interp c5t5f5")
-
-&nbsp;
-
-
-<h1 align="center"> Video Generation </h1>
-
-### KTH (64x64)
-
-<h3 align="center"> <img src="./KTH_gen_big_c10t5f5_SPADE_videos_100000.gif" alt="KTH gen c10t5f5"> </h3>
-
-&nbsp;
-
-### BAIR (64x64)
-
-<h3 align="center"> <img src="./bair64_gen_big192_5c2_pmask50_unetm_spade_videos_400000.gif" alt="BAIR gen c2t5"> </h3>
-
-&nbsp;
-
-### Stochastic Moving MNIST (64x64)
-
-<h3 align="center"> <img src="./SMMNIST_gen_big_c5t5f5_concat_videos_650000.gif" alt="SMMNIST gen c5t5f5"> </h3>
 
 &nbsp;
 
