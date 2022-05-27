@@ -2,7 +2,7 @@
 
 <h3 align="center"> <a href="https://voletiv.github.io" target="_blank">Vikram Voleti</a>*, <a href="https://ajolicoeur.wordpress.com/about/" target="_blank">Alexia Jolicoeur-Martineau</a>*, <a href="https://sites.google.com/view/christopher-pal" target="_blank">Christopher Pal</a></h3>
 
-<h3 align="center"> <a href="https://github.com/voletiv/mcvd-pytorch" target="_blank">Code</a>, <a href="https://arxiv.org/abs/2205.09853" target="_blank">Paper</a>, <a href="https://ajolicoeur.wordpress.com/?p=466" target="_blank">Blog</a> </h3>
+<h3 align="center"> <a href="https://github.com/voletiv/mcvd-pytorch" target="_blank">Code<img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/github.svg" width="30" height="30"></a>, <a href="https://arxiv.org/abs/2205.09853" target="_blank">Paper<img src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5cab99df4998decfbf9e218e_paper-01-p-500.png" width="30" height="30"></a>, <a href="https://ajolicoeur.wordpress.com/?p=466" target="_blank">Blog</a> </h3>
 
 &nbsp;
 
