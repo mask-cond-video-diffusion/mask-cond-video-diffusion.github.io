@@ -50,6 +50,20 @@ First, we use real `past` frames to predict `current` frames. Then, we autoregre
 * *left column (with frame number)* : real image 
 * *right column* : predicted image
 
+### Cityscapes (128x128)
+
+`past`=2, `current`=5, autoregressive `pred`=28
+
+![city32_big192_5c2_unetm_long_75_half](./city32_big192_5c2_unetm_long_75_half.gif "Cityscapes pred c2t5")
+Note that some Cityscapes videos contain brightness changes, which may explain the brightness change in our fake samples, but it is definitively overrepresented in the fake data. More parameters would needed to fix this problem (beyond what we can achieve with our 4 GPUs).
+&nbsp;
+
+<h3 align="center"> <img src="./Cityscapes_arrow.svg" alt="Cityscapes_arrow"> </h3>
+
+Our approach generates high quality frames many steps into the future: Given the two conditioning frames from the [Cityscapes](https://www.cityscapes-dataset.com/) validation set (top left), we show 7 predicted future frames in row 2 below, then skip to frames 20-28, autoregressively predicted in row 4. Ground truth frames are shown in rows 1 and 3. Notice the initial large arrow advancing and passing under the car. At frame 20 (the far left of the 3rd and 4th row), the initially small and barely visible second arrow in the background of the conditioning frames has advanced into the foreground.
+
+&nbsp;
+
 ### KTH (64x64)
 
 `past`=10, `current`=5, autoregressive `pred`=20
@@ -63,20 +77,6 @@ First, we use real `past` frames to predict `current` frames. Then, we autoregre
 `past`=2, `current`=5, autoregressive `pred`=28
 
 ![BAIR_big_c2t5_SPADE](./bair64_big192_5c2_unetm_spade_videos_390000.gif "BAIR pred c2t5")
-
-&nbsp;
-
-### Cityscapes (128x128)
-
-`past`=2, `current`=5, autoregressive `pred`=28
-
-![city32_big192_5c2_unetm_long_75_half](./city32_big192_5c2_unetm_long_75_half.gif "Cityscapes pred c2t5")
-Note that some Cityscapes videos contain brightness changes, which may explain the brightness change in our fake samples, but it is definitively overrepresented in the fake data. More parameters would needed to fix this problem (beyond what we can achieve with our 4 GPUs).
-&nbsp;
-
-<h3 align="center"> <img src="./Cityscapes_arrow.svg" alt="Cityscapes_arrow"> </h3>
-
-Our approach generates high quality frames many steps into the future: Given the two conditioning frames from the [Cityscapes](https://www.cityscapes-dataset.com/) validation set (top left), we show 7 predicted future frames in row 2 below, then skip to frames 20-28, autoregressively predicted in row 4. Ground truth frames are shown in rows 1 and 3. Notice the initial large arrow advancing and passing under the car. At frame 20 (the far left of the 3rd and 4th row), the initially small and barely visible second arrow in the background of the conditioning frames has advanced into the foreground.
 
 &nbsp;
 
