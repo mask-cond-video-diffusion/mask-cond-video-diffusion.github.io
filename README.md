@@ -6,7 +6,7 @@
 
 &nbsp;
 
-<h3 align="center"> <img src="./MaskCondVideoDiffFigure.svg" alt="Overview"  width="70%"> </h3>
+<h3 align="center"> <img src="./MaskCondVideoDiffFigure.png" alt="Overview"  width="70%"> </h3>
 
 <h3 align="center"> Summary </h3>
 
@@ -30,12 +30,12 @@ Video prediction is a challenging task. The quality of video frames from current
 {: style="text-align: justify"}
 
 ```bib
-@article{voleti2022MCVD,
-  title={Masked Conditional Video Diffusion for Prediction, Generation, and Interpolation},
-  author={Voleti, Vikram and Jolicoeur-Martineau, Alexia and Pal, Christopher},
-  url={https://arxiv.org/abs/2205.09853},
-  journal={arXiv:2205.09853},
-  year={2022}}
+@inproceedings{voleti2022MCVD,
+ author = {Voleti, Vikram and Jolicoeur-Martineau, Alexia and Pal, Christopher},
+ title = {MCVD: Masked Conditional Video Diffusion for Prediction, Generation, and Interpolation},
+ url = {https://arxiv.org/abs/2205.09853},
+ booktitle = {(NeurIPS) Advances in Neural Information Processing Systems},
+ year = {2022}
 }
 ```
 
